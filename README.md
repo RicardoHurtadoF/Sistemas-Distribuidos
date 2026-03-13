@@ -1,6 +1,6 @@
 # Introducción a Sistemas Distribuidos
 
-Repositorio para la materia **Introducción a Sistemas Distribuidos**.
+Repositorio para la materia Introducción a Sistemas Distribuidos.
 Aquí se encuentran los talleres, ejercicios y proyectos desarrollados durante el curso.
 
 ## Contenido
