@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package biblioteca;
+
+// mensajes que manda el cliente
+message SolicitudISBN {
+  string isbn = 1;
+}
+
+message SolicitudTitulo {
+  string titulo = 1;
+}
+
+// lo que devuelve el servidor para prestamo
+message RespuestaPrestamo {
+  bool aprobado = 1;
+  string mensaje = 2;
+  string fecha_devolucion = 3; // solo viene si aprobado es true
+}
+
+// para la consulta
+message RespuestaConsulta {
+  bool encontrado = 1;
+  string titulo = 2;
+  string autor = 3;
+  int32 total = 4;
+  int32 disponibles = 5;
+}
+
+// para devolucion
+message RespuestaDevolucion {
+  bool ok = 1;
+  string mensaje = 2;
+}
+
+// los 4 metodos que pide el taller
+service Biblioteca {
+  rpc PrestamoPorISBN   (SolicitudISBN)   returns (RespuestaPrestamo);
+  rpc PrestamoPorTitulo (SolicitudTitulo) returns (RespuestaPrestamo);
+  rpc Consulta          (SolicitudISBN)   returns (RespuestaConsulta);
+  rpc Devolucion        (SolicitudISBN)   returns (RespuestaDevolucion);
+}

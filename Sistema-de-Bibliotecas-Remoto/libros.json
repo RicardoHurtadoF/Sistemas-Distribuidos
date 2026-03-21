@@ -1,0 +1,37 @@
+[
+  {
+    "isbn": "978-0-13-468599-1",
+    "titulo": "Clean Code",
+    "autor": "Robert C. Martin",
+    "total": 3,
+    "prestados": 1
+  },
+  {
+    "isbn": "978-0-13-235088-4",
+    "titulo": "The Pragmatic Programmer",
+    "autor": "Andrew Hunt",
+    "total": 2,
+    "prestados": 0
+  },
+  {
+    "isbn": "978-0-596-51774-8",
+    "titulo": "Python Cookbook",
+    "autor": "David Beazley",
+    "total": 4,
+    "prestados": 4
+  },
+  {
+    "isbn": "978-0-13-110362-7",
+    "titulo": "The C Programming Language",
+    "autor": "Brian W. Kernighan",
+    "total": 2,
+    "prestados": 0
+  },
+  {
+    "isbn": "978-0-201-63361-0",
+    "titulo": "Design Patterns",
+    "autor": "Gang of Four",
+    "total": 3,
+    "prestados": 1
+  }
+]
