@@ -135,6 +135,9 @@ tamMatriz, np, workers, hilos, repeticion, tiempo_seg, estado
 
 Los estados posibles son `OK`, `TIMEOUT` y `ERROR`. Solo las filas con estado `OK` se incluyen en el análisis estadístico.
 
+con cambiar el programa objetivo y el nombre del csv desde el lanzador.pl se puede elejir cual de los dos programas usar.
+
+
 ---
 
 ## Algoritmos implementados
@@ -147,7 +150,7 @@ Algoritmo clásico. Cada worker multiplica su tajada de filas de A por las colum
 
 Antes de multiplicar, transpone B en un buffer local `mT`. El producto se calcula como fila de A × fila de `mT`, con **acceso contiguo en ambas matrices** (stride = 1). Mejor localidad de caché que FxC a costa de memoria adicional (O(N²)).
 
-
+con cambiar el pro
 
 ---
 
