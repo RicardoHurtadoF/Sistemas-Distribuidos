@@ -147,25 +147,7 @@ Algoritmo clásico. Cada worker multiplica su tajada de filas de A por las colum
 
 Antes de multiplicar, transpone B en un buffer local `mT`. El producto se calcula como fila de A × fila de `mT`, con **acceso contiguo en ambas matrices** (stride = 1). Mejor localidad de caché que FxC a costa de memoria adicional (O(N²)).
 
----
 
-## Flujo MPI (ambos programas)
-
-```
-MASTER                              WORKERS
-  │                                    │
-  ├─ verificarDiv(workers, N)          │
-  ├─ iniMatrix(A, B, N)                │
-  │                                    │
-  ├─── MPI_Bcast(N, tW) ─────────────>│
-  ├─── MPI_Bcast(B) ──────────────────>│
-  ├─── MPI_Send(tajada de A) ─────────>│
-  │                                    ├─ mxmOmpFxC / mxmOmpFxT(...)
-  │<── MPI_Recv(resultado parcial) ────┤
-  │                                    │
-  ├─ ensambla matrixC                  │
-  └─ MPI_Finalize()               MPI_Finalize()
-```
 
 ---
 
