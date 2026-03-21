@@ -28,6 +28,8 @@ biblioteca_pb2_grpc.py  <- generado automaticamente, no tocar
 
 **Primero instalar dependencias y generar el codigo:**
 
+primero se descarga el taller_grpc_biblioteca.zip
+
 
 debes estar en la carpeta donde estan los archivos
 ```bash
