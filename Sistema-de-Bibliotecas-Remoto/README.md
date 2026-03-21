@@ -53,8 +53,9 @@ Reemplazar la IP con la del servidor. Para saber la IP del servidor:
 - Linux: `hostname -I`
 - 
 si vas a probar servidor y cliente en el mismo computador no necesitas la IP, usa simplemente localhost:
+```bash
 python cliente.py localhost 50051
-
+```
 ## Libros de prueba
 
 | ISBN | Titulo | Disponibles |
