@@ -11,7 +11,7 @@ Servidor gRPC que maneja prestamos de libros. El cliente se conecta y puede:
 - Consultar si un libro esta disponible
 - Registrar una devolucion
 
-Los libros se guardan en libros.json que hace las veces de base de datos.
+Los libros se guardan en libros.json que hace de base de datos.
 
 ## Archivos
 
