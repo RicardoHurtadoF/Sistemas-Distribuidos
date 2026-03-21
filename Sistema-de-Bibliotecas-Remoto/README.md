@@ -51,8 +51,9 @@ python cliente.py 192.168.X.X 50051
 Reemplazar la IP con la del servidor. Para saber la IP del servidor:
 - Windows: `ipconfig`
 - Linux: `hostname -I`
-
-Si es en la misma maquina usar `localhost`.
+- 
+si vas a probar servidor y cliente en el mismo computador no necesitas la IP, usa simplemente localhost:
+python cliente.py localhost 50051
 
 ## Libros de prueba
 
