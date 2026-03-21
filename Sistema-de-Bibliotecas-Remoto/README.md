@@ -28,7 +28,10 @@ biblioteca_pb2_grpc.py  <- generado automaticamente, no tocar
 
 **Primero instalar dependencias y generar el codigo:**
 
+
+
 ```bash
+cd taller_grpc 
 pip install grpcio grpcio-tools
 python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. biblioteca.proto
 ```
