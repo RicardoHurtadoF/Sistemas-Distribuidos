@@ -1,0 +1,3 @@
+# mpirun --hostfile filehost -np 3 --map-by slot ./mxmOmpMPIfxc 512 4
+10.43.99.126		slots=4
+10.43.99.70		slots=4
